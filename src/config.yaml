@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: DVExplorers
+  site: 'http://localhost:4321/'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: DVExplorers
+    template: '%s — DVExplorers'
+  description: "\U0001F680 Competing in the 2024 NASA ADC!"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: DVExplorers
     images:
       - url: '~/assets/images/default.png'
         width: 1200

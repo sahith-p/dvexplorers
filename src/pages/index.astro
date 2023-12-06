@@ -2,14 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
-import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Features3 from '~/components/widgets/Features3.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Brands from '~/components/widgets/Brands.astro';
 
 const metadata = {
   title: 'DVExplorers',
@@ -57,9 +53,49 @@ const metadata = {
       </div>
     </Fragment>
   </Hero>
+  <BlogLatestPosts
+    id="blog"
+    title="Stay up to date with our progress."
+    information={`Catch up with our developments with the app design and development progress, as well as our community outreach events. All updates will be posted here and on our Instagram.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+  <FAQs
+    title="Development Overview"
+    items={[
+      {
+        title: 'Modeling and Visualization',
+        description:
+          'The project involved using Python to visualize lunar terrain data by creating a heightmap, integrating Perlin noise for realism, and developing an interactive app with navigation controls and toggles for different visualization modes and information displays to aid exploration of the simulated surface.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Landing & Destination Sites',
+        description: `After analyzing data on slope, access to water ice, sunlight, iron abundance, and earth visibility, the Faustini Rim A site was selected for the Artemis landing due to its proximity to permanently shadowed regions likely containing water, adequate sunlight to power the base, flat terrain, and high iron levels and earth visibility.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Path Finding',
+        description:
+          'The app utilizes a bidirectional A* search algorithm to efficiently calculate and display the shortest distance paths or least hill climbing paths from the Faustini Rim A landing site to the four largest nearby permanently shadowed regions, with flexibility to adjust the maximum slope threshold and compare path options.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Technologies & Skills',
+        description: `The inexperienced team explored unfamiliar gaming engines Unity and Ursina, deciding on Ursina for its coding simplicity, also leveraging Python for data analysis and pathfinding algorithms, overcoming initial gaps by dividing across computation, visualization, and optimization focus areas.`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
   <Features3
     title="Connect With Us"
-    subtitle="Follow us on our social media platforms and stay up to date with our progress."
+    subtitle="Follow us on our social media platforms and stay up to date with our progress and outreach events."
     columns={4}
     items={[
       {
@@ -69,16 +105,6 @@ const metadata = {
           target: '_blank',
           text: '@dvexplorers',
           href: 'https://www.instagram.com/dvexplorers/',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Email',
-        icon: 'tabler:mail',
-        callToAction: {
-          target: '_blank',
-          text: 'contact@dvexplorers.codes',
-          href: 'mailto:contact@dvexplorers.codes',
           variant: 'link',
         },
       },
@@ -102,38 +128,16 @@ const metadata = {
           variant: 'link',
         },
       },
+      {
+        title: 'YouTube',
+        icon: 'tabler:brand-youtube',
+        callToAction: {
+          target: '_blank',
+          text: 'Media',
+          href: '/media',
+          variant: 'link',
+        },
+      },
     ]}
   />
-
-  <!-- CallToAction Widget *********** -->
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Visit Blog',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">Development Preview Here</Fragment>
-
-    <Fragment slot="subtitle">Change Later.</Fragment>
-  </CallToAction>
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Visit Blog',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">Blog Preview Here</Fragment>
-
-    <Fragment slot="subtitle">Change Later.</Fragment>
-  </CallToAction>
 </Layout>

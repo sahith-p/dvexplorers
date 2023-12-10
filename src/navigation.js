@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Challenge',
-          href: getPermalink('/about/challenge'),
+          href: 'https://www.nasa.gov/learning-resources/app-development-challenge/about-nasa-app-development-challenge-adc/',
         },
         {
           text: 'Team',
@@ -15,7 +15,7 @@ export const headerData = {
         },
         {
           text: 'Outreach',
-          href: getPermalink('/about/team'),
+          href: getPermalink('/about/outreach'),
         },
       ],
     },
@@ -38,7 +38,7 @@ export const headerData = {
     },
     {
       text: 'Media',
-      href: '#',
+      href: '/media',
     },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
@@ -49,7 +49,10 @@ export const footerData = {
     {
       title: 'About',
       links: [
-        { text: 'Challenge', href: '/about/challenge' },
+        {
+          text: 'Challenge',
+          href: 'https://www.nasa.gov/learning-resources/app-development-challenge/about-nasa-app-development-challenge-adc/',
+        },
         { text: 'Team', href: '/about/team' },
         { text: 'Outreach', href: '/about/outreach' },
       ],

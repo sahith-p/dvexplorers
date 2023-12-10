@@ -1,0 +1,33 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Challenges',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="About"
+    image={{
+      src: 'https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Moon Image',
+    }}
+  >
+    <Fragment slot="title">
+      The Team<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Our team is composed of 5 High School juniors with varying programming expertise and knowledge. Some members also
+      have advanced project management and general development kwowledge. This skillset allows for an efficient team
+      dynamic where we are able to learn and educate in a supportive environment.
+    </Fragment>
+  </Hero>
+</Layout>

@@ -1,0 +1,77 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Development',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Overview"
+    image={{
+      src: 'https://images.unsplash.com/photo-1447433516455-abac93050eab?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Moon Image',
+    }}
+  >
+    <Fragment slot="title">
+      Development Timeline<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Our development process involved a lot of trial and error, as well as research. We took advice from industry
+      experts and our teacher advisor to further our progress throughout the process.
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Development Statistics"
+    stats={[
+      { title: 'Meetings', amount: '9' },
+      { title: 'Presentation', amount: '1' },
+      { title: 'Iterations', amount: '12' },
+      { title: 'Days', amount: '46' },
+    ]}
+  />
+  <Steps2
+    title="Our Timeline"
+    subtitle="We phased out a timeline to help us manage our project. This ensured that we would be on track to finish the challenge on time. Each step represents a week."
+    items={[
+      {
+        title: 'Week 1 – Oct 9th thru Oct 15th',
+        description: 'Review Development Guide, view sample app videos, view last years winngers, LVC 1 Event',
+      },
+      {
+        title: 'Week 2 – Oct 16th thru Oct 22nd',
+        description: 'Research coding platform, research landing site, team name, Haworth Site paper, LVC 2 Event',
+      },
+      {
+        title: 'Week 3 – Oct 23rd thru Oct 29th',
+        description: 'Finalize Region, create documentation, 3d mesh and visualization, landing sites',
+      },
+      {
+        title: 'Week 4 – Oct 30th thru Nov 5th',
+        description: 'Finalize landing site, visualize height/slope/elevation, path finding algorithm',
+      },
+      {
+        title: 'Week 5 – Nov 6th thru Nov 12th',
+        description: 'Community engagement, begin website development',
+      },
+      {
+        title: 'Week 6 – Nov 13th thru Nov 20th',
+        description: 'Finalize desitation site, visualize minimap on 3d mesh, toggle features, LVC 3 Event',
+      },
+      {
+        title: 'Week 6 – Nov 14th thru Nov 21th',
+        description: 'Finalize project and publish website',
+      },
+    ]}
+  />
+</Layout>

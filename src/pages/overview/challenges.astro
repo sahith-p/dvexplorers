@@ -1,0 +1,48 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Challenges',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Overview"
+    image={{
+      src: 'https://images.unsplash.com/photo-1460910996094-e71452a43cb0?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Moon Image',
+    }}
+  >
+    <Fragment slot="title">
+      Challenges<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Our development process involved a lot of trial and error, as well as research. We took advice from industry
+      experts and our teacher advisor to further our progress throughout the process.
+    </Fragment>
+  </Hero>
+  <Features2
+    title="Project Management"
+    subtitle="The process of creating the app was both challenging and rewarding. Apart from technical challenges like selecting sites, terrain generation, and path finding highlighted before, we also encountered other challenges.  No one in the team had prior experience working on a project of similar complexity and scale, and in the first two weeks each member was trying to do everything. That experience made us realize that we needed to use a methodical goal oriented approach. We referred to the K-12 Computer Science Framework to collaborate around computing and identified multiple work streams led by an owner and that could run in parallel. We defined computational problems that we needed to solve - dealing with large data, creating moon texture and visualization, identifying and optimizing path finding, defining user interface and user options, identifying landing and destination sites, and choosing our coding platform. This led us to creating a storyboard that guided and organized the team to start collaborating to build the app. "
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+  <Features2
+    title="Development Considerations"
+    subtitle="Early on, we realized the traditional front-end/back-end approach wouldn't work for our problem. After watching the LVC from Ben Weno and Billy Young from Johnson Space Center, we opted for a gaming engine solution and explored Unity and Ursina. Despite our team's C# and Python coding experience, we lacked gaming engine knowledge. To bridge the gap, we enlisted help from an industry mentor. After 8-10 days with both engines, we chose Ursina as Unity's complexity made it challenging. Ursina, with simpler code, direct game object control, and seamless integration with Python libraries like Numpy for handling large datasets, proved to be a better fit for our project."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+</Layout>

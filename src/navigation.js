@@ -34,7 +34,7 @@ export const headerData = {
     },
     {
       text: 'Blog',
-      href: 'blog',
+      href: '/blog',
     },
     {
       text: 'Media',
@@ -83,7 +83,7 @@ export const footerData = {
   socialLinks: [
     { ariaLabel: 'Mail', icon: 'tabler:mail', href: 'mailto:contact@dvexplorers.codes' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/dvexplorers/' },
-    { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/aiworld2020/nasa-adc-2023' },
+    { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/aiworld2020/dvexplorers-2024' },
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: '/media' },
   ],
   footNote: `

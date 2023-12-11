@@ -14,6 +14,8 @@ We organized a school outreach event attended by 30 Sophomore and Junior student
 
 The classroom pictured above is our schools state of the art computer science classroom where classes such as VS.Net are taught by our teacher adivsor, Ms. Lau.
 
+**We also curated a selection of online resources and links which can be found on our [outreach page](https://dvexplorers.codes/about/outreach)** and discussed this during the presentation.
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR-8bka5CP2_-cq2ZNFQPEgEo-SQtkMTbMow9M03PdXfaaNKb1Iiz3gHP6zvLYdntl0qLZwM1axnl9V/embed?start=false&loop=false&delayms=5000" frameborder="0"  height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="w-full"></iframe>
 
 On Instagram, we raised awareness about Quantum activities, focusing on the Qubit game powered by Google Quantum AI, which builds a Quantum Encyclopedia as players engage.

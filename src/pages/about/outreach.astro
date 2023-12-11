@@ -4,6 +4,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 
 const metadata = {
   title: 'Challenges',
@@ -13,13 +14,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="About"
-    image={{
-      src: 'https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'Moon Image',
-    }}
-  >
+  <Hero tagline="About">
     <Fragment slot="title">
       Outreach<br />
     </Fragment>
@@ -29,6 +24,93 @@ const metadata = {
       Instagram, are part of our many outreach efforts.
     </Fragment>
   </Hero>
+  <Features3
+    title="Resources"
+    subtitle="Click on the following resources to learn more and expand your knowledge."
+    columns={4}
+    items={[
+      {
+        title: 'Game',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Qubit Game',
+          href: 'https://quantumai.google/education/thequbitgame',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Quantum Encyclopedia',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://youtu.be/R22ml1o24qk',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Quantum Superposition',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://quantumatlas.umd.edu/entry/superposition/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Quantum Measurement',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://quantumatlas.umd.edu/entry/measurement/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Quantum Entanglement',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://quantumatlas.umd.edu/entry/entanglement/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Moon Trek',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://trek.nasa.gov/moon',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'NASA LOLA Data Node',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://pds-geosciences.wustl.edu/missions/lro/lola.htm',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'SCaN Now',
+        icon: 'tabler:chevrons-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Click to View',
+          href: 'https://scan-now.gsfc.nasa.gov/',
+          variant: 'link',
+        },
+      },
+    ]}
+  />
   <Features2
     title="Events"
     subtitle="We organized a school outreach event attended by 30 Sophomore and Junior students. We discussed the NASA App development challenge, showcasing a live demo that got students excited about potentially participating next year. "
